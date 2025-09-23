@@ -4,7 +4,6 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Link } from 'react-router-dom';
-import SEO from '@/components/SEO';
 import {
   Users,
   Heart,
@@ -298,12 +297,7 @@ const workStats = [
 export default function Careers() {
   return (
     <>
-      <SEO
-        title="Careers - Join Our Team of Expert Developers"
-        description="Join SoftwareCraft's remote-first team of passionate developers. Explore open positions in engineering, design, and product development with competitive benefits and growth opportunities."
-        keywords="software developer jobs, remote developer careers, engineering positions, software development team, tech careers, developer benefits"
-        ogTitle="Software Development Careers at SoftwareCraft"
-        ogDescription="Build your career with a leading software development company. Remote opportunities, competitive benefits, and a culture of innovation await." />
+      
       
       <CareersContent />
     </>);

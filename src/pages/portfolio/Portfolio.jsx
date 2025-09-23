@@ -3,7 +3,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import SEO from '@/components/SEO';
 import {
   ExternalLink,
   Github,
@@ -237,12 +236,7 @@ const testimonials = [
 export default function Portfolio() {
   return (
     <>
-      <SEO
-        title="Portfolio - Our Software Development Projects"
-        description="Explore our portfolio of successful software development projects including e-commerce platforms, mobile apps, and enterprise solutions that delivered real business results."
-        keywords="software portfolio, case studies, web development projects, mobile app portfolio, software solutions, project showcase"
-        ogTitle="SoftwareCraft Portfolio - Real Projects, Real Results"
-        ogDescription="See how we've helped 150+ companies with custom software solutions. From e-commerce to healthcare, discover our proven track record." />
+      
       
       <PortfolioContent />
     </>);
@@ -288,7 +282,7 @@ function PortfolioContent() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link to="/services" data-testid="hero-cta-secondary">
+                <Link to="/our-services" data-testid="hero-cta-secondary">
                   View Our Services
                 </Link>
               </Button>
@@ -567,7 +561,7 @@ function PortfolioContent() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link href="/services" data-testid="final-cta-secondary">
+                <Link href="/our-services" data-testid="final-cta-secondary">
                   Explore Services
                 </Link>
               </Button>

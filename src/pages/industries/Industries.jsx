@@ -3,7 +3,6 @@ import { Card, CardHeader, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import SEO from '@/components/SEO';
 import {
   Building,
   Heart,
@@ -193,12 +192,7 @@ const certifications = [
 export default function Industries() {
   return (
     <>
-      <SEO
-        title="Industries We Serve - Sector-Specific Solutions"
-        description="SoftwareCraft serves diverse industries including healthcare, finance, e-commerce, education, and technology. Discover our industry-specific software solutions and case studies."
-        keywords="software development industries, healthcare software, fintech solutions, e-commerce development, education technology, industry expertise"
-        ogTitle="Multi-Industry Software Development Expertise | SoftwareCraft"
-        ogDescription="Specialized software solutions for healthcare, finance, retail, education, and technology sectors. Industry-specific expertise and proven results." />
+      
       
       <IndustriesContent />
     </>);

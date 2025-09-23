@@ -3,7 +3,6 @@ import { Card, CardHeader, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import SEO from '@/components/SEO';
 import {
   Code2,
   Smartphone,
@@ -155,12 +154,7 @@ const faqs = [
 export default function Services() {
   return (
     <>
-      <SEO
-        title="Software Development Services"
-        description="Custom web development, mobile apps, cloud solutions, and digital transformation services. Expert developers delivering scalable software solutions for businesses of all sizes."
-        keywords="custom software development, web development services, mobile app development, cloud solutions, API development, e-commerce development"
-        ogTitle="Professional Software Development Services | SoftwareCraft"
-        ogDescription="From web apps to mobile solutions, we deliver custom software that drives business growth. 98% success rate with 150+ happy clients." />
+      
       
       <ServicesContent />
     </>);

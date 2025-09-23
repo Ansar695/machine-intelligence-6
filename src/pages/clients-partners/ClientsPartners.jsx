@@ -4,7 +4,6 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Link } from 'react-router-dom';
-import SEO from '@/components/SEO';
 import {
   Star,
   Quote,
@@ -202,12 +201,7 @@ const industries = [
 export default function ClientsPartners() {
   return (
     <>
-      <SEO
-        title="Our Clients & Partners - Success Stories"
-        description="Discover how SoftwareCraft has helped 150+ companies across various industries achieve digital transformation with custom software solutions. Read client testimonials and success stories."
-        keywords="software development clients, client testimonials, partnership programs, success stories, client reviews, software solutions showcase"
-        ogTitle="150+ Happy Clients - SoftwareCraft Success Stories"
-        ogDescription="From startups to enterprise companies, see how our software development expertise has transformed businesses across multiple industries." />
+      
       
       <ClientsPartnersContent />
     </>);
@@ -496,7 +490,7 @@ function ClientsPartnersContent() {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <Link to="/services" data-testid="final-cta-secondary">
+                <Link to="/our-services" data-testid="final-cta-secondary">
                   Explore Services
                 </Link>
               </Button>

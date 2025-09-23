@@ -7,7 +7,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
-import SEO from '@/components/SEO';
 import {
   Mail,
   Phone,
@@ -138,12 +137,7 @@ const faqs = [
 export default function Contact() {
   return (
     <>
-      <SEO
-        title="Contact Us - Get Your Free Consultation"
-        description="Ready to start your software project? Contact SoftwareCraft for a free consultation. Expert developers available via phone, email, or live chat with 24-hour response time."
-        keywords="contact software developers, free consultation, software development quote, project discussion, custom software contact"
-        ogTitle="Contact SoftwareCraft - Free Software Development Consultation"
-        ogDescription="Get in touch with our expert development team. Free consultations, 24-hour response time, and transparent project discussions." />
+      
       
       <ContactContent />
     </>);

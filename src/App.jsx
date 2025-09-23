@@ -5,17 +5,16 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { HelmetProvider } from "react-helmet-async";
 import Layout from "@/components/Layout";
-import Home from "@/pages/Home";
-import Services from "@/pages/Services";
-import About from "@/pages/About";
-import Portfolio from "@/pages/Portfolio";
-import Contact from "@/pages/Contact";
-import ClientsPartners from "@/pages/ClientsPartners";
-import Industries from "@/pages/Industries";
-import Careers from "@/pages/Careers";
-import NotFound from "@/pages/not-found";
+import Home from "@/pages/home/Home";
+import Services from "@/pages/our-services/Services";
+import About from "@/pages/about/About";
+import Portfolio from "@/pages/portfolio/Portfolio";
+import Contact from "@/pages/contact/Contact";
+import ClientsPartners from "@/pages/clients-partners/ClientsPartners";
+import Industries from "@/pages/industries/Industries";
+import Careers from "@/pages/careers/Careers";
+import NotFound from "@/pages/not-found/not-found";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -31,7 +30,7 @@ function Router() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/our-services" element={<Services />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<Contact />} />
@@ -48,14 +47,12 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <HelmetProvider>
-        <ThemeProvider defaultTheme="dark" storageKey="ui-theme">
-          <TooltipProvider>
-            <Toaster />
-            <Router />
-          </TooltipProvider>
-        </ThemeProvider>
-      </HelmetProvider>
+      <ThemeProvider defaultTheme="dark" storageKey="ui-theme">
+        <TooltipProvider>
+          <Toaster />
+          <Router />
+        </TooltipProvider>
+      </ThemeProvider>
     </QueryClientProvider>);
 
 }
