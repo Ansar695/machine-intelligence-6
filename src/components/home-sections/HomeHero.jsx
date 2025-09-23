@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { stats } from "@/utils/static-data/homeData";
 import { Zap, ArrowRight } from "lucide-react";
 
-const Hero = () => {
+const HomeHero = () => {
   return (
     <section className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-primary/5">
@@ -76,4 +76,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HomeHero;
