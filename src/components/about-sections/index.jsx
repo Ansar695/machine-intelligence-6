@@ -5,7 +5,7 @@ import Timeline from "./Timeline";
 import Team from "./Team";
 import Certifications from "./Certifications";
 import Culture from "./Culture";
-import CTA from "./CTA";
+import JoinOurJoureny from "./JoinOurJoureny";
 
 export default function AboutSections() {
   return (
@@ -17,7 +17,7 @@ export default function AboutSections() {
       <Team />
       <Certifications />
       <Culture />
-      <CTA />
+      <JoinOurJoureny />
     </>
   );
 }

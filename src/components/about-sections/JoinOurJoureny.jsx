@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight, MapPin } from "lucide-react";
 
-export default function CTA() {
+export default function JoinOurJoureny() {
   return (
     <section className="py-24">
       <div className="container mx-auto px-4">
