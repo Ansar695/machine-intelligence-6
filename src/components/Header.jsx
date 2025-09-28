@@ -12,37 +12,7 @@ import {
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useTheme } from "@/components/ThemeProvider";
-
-const navItems = [
-  { name: "Home", href: "/" },
-  { name: "Services", href: "/our-services" },
-  { name: "About", href: "/about" },
-  { name: "Portfolio", href: "/portfolio" },
-  { name: "Contact", href: "/contact" },
-];
-
-const moreItems = [
-  { name: "Clients & Partners", href: "/clients-partners" },
-  { name: "Industries", href: "/industries" },
-  { name: "Careers", href: "/careers" },
-];
-
-const socialLinks = [
-  { name: "Email", href: "mailto:hello@softwarecraft.com", icon: Mail },
-  { name: "Phone", href: "tel:+15551234567", icon: Phone },
-  {
-    name: "LinkedIn",
-    href: "https://linkedin.com/company/softwarecraft",
-    icon: Linkedin,
-    external: true,
-  },
-  {
-    name: "Upwork",
-    href: "https://upwork.com/agencies/softwarecraft",
-    icon: ExternalLink,
-    external: true,
-  },
-];
+import { navigation, socialLinks } from "@/utils/static-data/headerFooterData";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -81,13 +51,13 @@ export default function Header() {
           >
             <div className="w-8 h-8 bg-gradient-to-r from-primary to-chart-2 rounded-md"></div>
             <span className="text-xl font-bold text-foreground">
-              SoftwareCraft
+              Machine Intelligence 6
             </span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-6">
-            {navItems.map((item) => (
+            {navigation.main.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
@@ -103,7 +73,7 @@ export default function Header() {
             ))}
 
             {/* More dropdown items for larger screens */}
-            {moreItems.map((item) => (
+            {navigation.company.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
@@ -187,7 +157,7 @@ export default function Header() {
               <div className="space-y-6">
                 {/* Main Navigation */}
                 <div className="space-y-3">
-                  {navItems.map((item) => (
+                  {navigation.main.map((item) => (
                     <Link
                       key={item.name}
                       to={item.href}
@@ -206,7 +176,7 @@ export default function Header() {
 
                 {/* Additional Pages */}
                 <div className="space-y-3 border-t border-border pt-4">
-                  {moreItems.map((item) => (
+                  {navigation.company.map((item) => (
                     <Link
                       key={item.name}
                       to={item.href}

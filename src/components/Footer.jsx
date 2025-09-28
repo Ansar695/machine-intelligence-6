@@ -1,53 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Mail, Phone, Linkedin, ExternalLink, ArrowRight } from "lucide-react";
-
-const navigation = {
-  main: [
-    { name: "Home", href: "/" },
-    { name: "Services", href: "/our-services" },
-    { name: "About", href: "/about" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "Contact", href: "/contact" },
-  ],
-
-  company: [
-    { name: "Clients & Partners", href: "/clients-partners" },
-    { name: "Industries", href: "/industries" },
-    { name: "Careers", href: "/careers" },
-  ],
-};
-
-const socialLinks = [
-  {
-    name: "Email",
-    href: "mailto:hello@softwarecraft.com",
-    icon: Mail,
-    external: false,
-  },
-  {
-    name: "Phone",
-    href: "tel:+15551234567",
-    icon: Phone,
-    external: false,
-  },
-  {
-    name: "LinkedIn",
-    href: "https://linkedin.com/company/softwarecraft",
-    icon: Linkedin,
-    external: true,
-  },
-  {
-    name: "Upwork",
-    href: "https://upwork.com/agencies/softwarecraft",
-    icon: ExternalLink,
-    external: true,
-  },
-];
+import { navigation, socialLinks } from "@/utils/static-data/headerFooterData";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="bg-card border-t border-card-border">
       <div className="container mx-auto px-4 py-16">
@@ -58,7 +14,7 @@ export default function Footer() {
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-8 h-8 bg-gradient-to-r from-primary to-chart-2 rounded-md"></div>
               <span className="text-xl font-bold text-foreground">
-                SoftwareCraft
+                Machine Intelligence 6
               </span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md leading-relaxed">
@@ -162,7 +118,7 @@ export default function Footer() {
         <div className="border-t border-card-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} SoftwareCraft. All rights reserved.
+              © 2025 Machine Intelligence 6. All rights reserved.
             </p>
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
               <Link
